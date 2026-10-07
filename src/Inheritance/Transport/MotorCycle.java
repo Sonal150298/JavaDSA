@@ -11,6 +11,6 @@ public class MotorCycle extends Vehicle{
         this.suspensionType=suspensionType;
     }
     public void wheelie(){
-        System.out.printf("MotorCycle is doing wheelieee!!! %s",name);
+        System.out.printf("MotorCycle is doing wheelieee!!! %s\n",name);
     }
 }

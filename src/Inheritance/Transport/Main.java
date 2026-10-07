@@ -6,5 +6,11 @@ public class Main {
         car.startEngine();
         car.startAC();
         car.stopEngine();
+
+        MotorCycle motorCycle = new MotorCycle("Splendor", "plus", 2, "U", "Soft");
+
+        motorCycle.startEngine();
+        motorCycle.wheelie();
+        motorCycle.stopEngine();
     }
 }
