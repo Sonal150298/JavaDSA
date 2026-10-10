@@ -1,14 +1,13 @@
-package Arrays;
+package src.Arrays;
 
 import java.util.Scanner;
 
-public class TwoDInputArray {
-
+public class Sum2DArray {
     static void main() {
-        Scanner scanner= new Scanner(System.in);
 
-
+        int sum=0;
         int a[][]= new int[3][4];
+        Scanner scanner=new Scanner(System.in);
 
         for (int i = 0; i <a.length ; i++) {
             for(int j=0;j<a[i].length;j++)
@@ -20,14 +19,13 @@ public class TwoDInputArray {
 
         }
 
-        for (int i = 0; i <a.length ; i++) {
-            for(int j=0;j<a[i].length;j++)
+        for (int i = 0; i < a.length; i++) {
+            for (int j=0;j<a[i].length;j++)
             {
-                System.out.print(a[i][j]+ " ");
-
+                sum=sum+a[i][j];
             }
-            System.out.println();
-
         }
+
+        System.out.println("Sum of array="+sum);
     }
 }

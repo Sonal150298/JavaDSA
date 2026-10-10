@@ -1,8 +1,8 @@
-package Strings;
+package src.Strings;
 
 import java.util.Scanner;
 
-public class PrintReversedString
+public class CheckPalindromString
 {
     static void main() {
         String inputString,reversedString="";
@@ -23,5 +23,10 @@ public class PrintReversedString
         }
 
         System.out.println("reversed string of the  given string:"+reversedString);
+
+        if(reversedString.equals(inputString))
+            System.out.println("Given String is -PALINDROME STRING");
+        else
+            System.out.println("Given String is -NOT PALINDROME STRING");
     }
 }

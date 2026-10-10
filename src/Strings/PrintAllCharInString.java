@@ -1,8 +1,8 @@
-package Strings;
+package src.Strings;
 
 import java.util.Scanner;
 
-public class PrintLengthOfString
+public class PrintAllCharInString
 {
     static void main() {
         String inputString;
@@ -11,9 +11,10 @@ public class PrintLengthOfString
 
         System.out.println("Enter a i/p string:");
        inputString= sc.nextLine();
-        System.out.println("Print length of the I/P string below:");
+        System.out.println("Print each char in the I/P string below:");
         for (int i=0;i<inputString.length();i++)
         {
+            System.out.println("-->"+inputString.charAt(i));
             count++;
         }
 
